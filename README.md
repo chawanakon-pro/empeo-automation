@@ -17,7 +17,7 @@ SLOWMO=1500 npx playwright test --headed # TO run all testcases
 Videos, screenshots, and traces are saved in `test-results/`. The HTML report is in `playwright-report/`.
 
 ## Record a video demo
-
+- Can view the test result in folder test-results
 - Playwright already records one `.webm` video per test in `test-results/<test>/video.webm` (`video: 'on'`).
 - For one continuous demo, run `SLOWMO=500 npm run test:headed` and record the screen with macOS `Cmd + Shift + 5` (Record Entire Screen).
 
