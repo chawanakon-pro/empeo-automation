@@ -11,13 +11,7 @@ npx playwright install chromium
 ## Run
 
 ```bash
-npm test                         # everything: safe tests first, then @consumes-data tests
-npm run test:validation          # only tests that do not use up the fixed phone/promo
-npm run test:consumes            # only @consumes-data tests (TC_REGIS_00001, TC_REGIS_00006)
-npm run test:headed              # watch the browser
-SLOWMO=500 npm run test:headed   # slow down for a demo recording
-npx playwright test tests/TC_REGIS_00002.spec.ts --headed   # a single test case
-npm run report                   # open the HTML report
+SLOWMO=1500 npx playwright test --headed # TO run all testcases
 ```
 
 Videos, screenshots, and traces are saved in `test-results/`. The HTML report is in `playwright-report/`.
